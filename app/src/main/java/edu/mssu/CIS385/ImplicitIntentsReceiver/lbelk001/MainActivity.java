@@ -17,8 +17,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Uri uri = intent.getData();
         if (uri != null){
-            String uri_string = getString(R.string.uri_label) + uri.toString();}
+            String uri_string = getString(R.string.uri_label) + uri.toString();
             TextView textView = findViewById(R.id.text_uri_message);
+            textView.setText(uri_string);
         }
     }
 }
